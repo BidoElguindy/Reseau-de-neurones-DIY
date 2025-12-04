@@ -1,5 +1,41 @@
+"""
+Neural Network Library - DIY Implementation
+
+A from-scratch implementation of neural network components using only NumPy.
+This module provides core building blocks for constructing and training
+deep learning models without relying on high-level frameworks.
+
+Components:
+-----------
+Modules:
+    - Linear: Fully connected layer
+    - Conv2D: 2D Convolutional layer
+    - MaxPool2D: Max pooling layer
+    - Flatten: Tensor reshaping layer
+    - Sequentiel: Sequential container for layers
+    - AutoEncodeur: Autoencoder architecture
+
+Activation Functions:
+    - TanH: Hyperbolic tangent
+    - Sigmoid: Logistic sigmoid
+    - Softmax: Softmax for multi-class classification
+    - LogSoftmax: Log-softmax for numerical stability
+
+Loss Functions:
+    - MSELoss: Mean Squared Error
+    - CrossEntropyLoss: Cross-entropy loss
+    - BCE: Binary Cross-Entropy
+    - NLLLoss: Negative Log-Likelihood
+
+Optimizers:
+    - Optim: Optimizer wrapper
+    - SGD: Stochastic Gradient Descent
+
+Author: Georges Elguindy
+License: MIT
+"""
+
 import numpy as np
-#Elguindy Abdelrahman 21102968/ Georges Martin 28731590
 
 
 class Loss(object):
